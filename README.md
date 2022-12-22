@@ -1,1 +1,1 @@
-# Boga spletna stran za zasebno uporabo 🥱
+# Uboga spletna stran za zasebno uporabo 🥱
