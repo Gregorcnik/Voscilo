@@ -1,0 +1,50 @@
+:root {
+  --grad1: #548bde;
+  --grad2: #8b4db4;
+}
+
+body {
+  color: white;
+}
+
+.canvas { 
+  height: 100vh;
+  position: relative;
+}
+
+.center {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.grad {
+  background-color: red; /* For browsers that do not support gradients */
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, var(--grad1), var(--grad2));
+  /* IE 10 */ 
+  background: -ms-radial-gradient(circle, var(--grad1), var(--grad2));
+  /* Opera cannot do radial gradients yet */
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(var(--grad1)), to(var(--grad2))); 
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, var(--grad1), var(--grad2));
+}
+
+.fakeImg {
+  background-color: gray;
+  height: 400px;
+  width: 200px;
+}
+
+.c {
+  align-items: center;
+  flex-direction: row;
+}
+
